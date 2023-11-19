@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITNESS EMPIRE</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-size: 30px;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('./bg2.jpg');
+    }
+    .left{
+        display: inline-block;
+        /*border: 2px solid red;*/
+        position: absolute;
+        left: 60px;
+        top: 24px;
+    }
+    .left img{
+        width: 130px;
+    }
+    .left div{
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+    }
+    .mid{
+        display: block;
+        width: 33%;
+        margin: 24px auto;
+        /*border: 2px solid green; */
+        
+    }
+    .right{
+        position: absolute;
+        right: 42px;
+        top: 41px;
+        display: inline block;
+        /*border: 2px solid blue;*/
+    }
+    .navbar{
+        display: inline-block;
+    }
+
+    .navbar li{
+        display: inline-block;   
+        font-size: 98px;
+    }
+    .navbar li a{
+         color: white;
+         font-size: 98px;
+         text-decoration: none;
+         padding: 34px 23px
+        }
+        .btn{
+            margin: 0px 9px;
+            color: black;
+            padding: 4px 14px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .container{
+            margin:106px 80px;
+            padding:4px 14px;
+            font-size: 32px;
+            color: white;
+            border:2px solid grey;
+            border-radius: 10px;
+            cursor: pointer; 
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 501px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+    }
+    .container h1{
+        text-align: center;
+     }
+     .container button{
+        display: block;
+        margin: 20px auto;
+        width: 74%;
+     }
+
+   </style>
+<body>
+    <header class="header">
+        <!-- left box for logo-->
+        <div class="left">
+            <img src="logo.jpeg"alt="">
+            <div>Fitness Empire</div>
+                 
+        </div>
+        <!--mid box for navbar-->
+        <div class="mid">
+            <ul classs="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li> 
+                <li><a href="#">Know about your fitness</a></li>
+                <li><a href="#">Contact us</a></li>           </ul>
+        </div>
+
+        <!-- right box for buttons-->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Agra now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name=""placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name=""placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name=""placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name=""placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+    
+</body>
+</html>
